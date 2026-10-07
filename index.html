@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJA em Ação</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="hero">
+        <p class="tag">Educação de Jovens e Adultos</p>
+        <h1>EJA em Ação</h1>
+        <p class="subtitle">
+          A leitura é o começo de novas oportunidades. Vamos praticar um pouco
+          de alfabetização de forma simples e divertida.
+        </p>
+      </header>
+
+      <section class="quiz-card" aria-live="polite">
+        <div class="quiz-header">
+          <span id="question-number">Questão 1</span>
+          <div class="score-box">
+            <span>Pontuação</span>
+            <strong id="score">0</strong>
+          </div>
+        </div>
+
+        <h2 id="question-text">Qual palavra começa com a letra M?</h2>
+
+        <div id="options" class="options">
+          <button class="answer-btn" data-index="0" type="button">Mesa</button>
+          <button class="answer-btn" data-index="1" type="button">Lápis</button>
+          <button class="answer-btn" data-index="2" type="button">Casa</button>
+        </div>
+
+        <p id="feedback" class="feedback" aria-live="polite"></p>
+
+        <button id="next-btn" class="next-btn" type="button" disabled>
+          Próxima pergunta
+        </button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
